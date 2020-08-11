@@ -1,0 +1,220 @@
+body{
+    background-color: #f6f5f5;
+    padding: 0;
+    margin: 0;
+}
+/*-------NAV BAR SECTION-------*/
+#navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    
+}
+#navbar ul{
+    list-style: none;
+    display: flex;
+}
+#navbar a{
+    text-decoration: none;
+    color: #505050;
+}
+#navbar li a:hover{
+    font-size: 20px;
+}
+#navbar ul li a{
+    margin: 10px;
+}
+#navbar .brand{
+    margin-left: 10px;
+}
+/*-------SECTION WELCOME-SECTION-------*/
+#welcome-section{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    align-items: center;
+    margin-top: 50px;
+    height: 100vh;
+    
+}
+
+.text-container{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.text-container h1{
+    color: #6d6d6d;
+    font-size: 20px;
+}
+.text-container p{
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    font-size: 30px;
+}
+.img-container{
+    text-align: center;
+    margin-bottom: 70px;
+}    
+#welcomeImg{
+    width: 80%;
+    border-radius:100%;
+    
+}
+/*-------SECTION ABOUT ME-------*/
+#aboutMe{
+    text-align: center;
+}
+#aboutMe h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#aboutMe p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #1a1a1a;
+}#aboutMe .me{
+    font-size: 20px;
+    margin: 0px 20px 15px 20px;
+    font-weight: 500;
+}
+#aboutMeImg{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    align-content: space-around;
+}
+#aboutMeImg img:nth-child(1){
+    border-radius: 100%;
+    width: 50%;
+    justify-self: center;
+}
+#aboutMeImg img:nth-child(2){
+    border-radius: 100%;
+    width: 70%;
+    justify-self: center;
+}
+#skills-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+#skills-container p{
+    font-weight: 500;
+    font-size: 16px;
+}
+/*-------SECTION PROJECTS-------*/
+#projects{
+    text-align: center;
+}
+#projects-container{
+    display: grid;
+    grid-template-rows: repeat(auto-fit,minmax(400px, 1fr));
+    justify-content: center;
+    grid-gap: 15px;
+}
+.project-tile img{
+    width: 450px;
+    height: 400px;
+    margin: 0;
+    
+}
+#projects-container a {
+    text-decoration: none;
+    color: #f6f5f5;
+    border: 2px solid #505050;
+}
+#projects-container a p{
+    background: #505050;
+    margin: 0;
+    padding: 10px 0px;
+    font-size: 20px;
+}
+/*-------FOOTER-------*/
+footer{
+    text-align: center;
+}
+footer p:nth-child(1){
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+footer p:nth-child(2){
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+}
+#social-icons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    margin-bottom: 50px;
+}
+#social-icons a{
+    justify-self: center;
+    width: 60px;
+    height: 60px;
+}
+#social-icons a i{
+   color: #505050; 
+}
+.copyright{
+    background: #1a1a1a;
+    padding: 30px 0px;
+    margin-bottom: 0;
+    color: #f6f5f5;
+    font-size: 20px;
+}
+@media(min-width:700px){
+    #welcome-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .text-container h1{
+        font-size: 60px;
+    }
+    .text-container p{
+        font-size: 50px;
+    }
+    #aboutMe{
+        margin-top: 70px;
+    }
+    #aboutMe h2{
+        font-size: 60px;
+    }
+    #presentation{
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+    }
+    #presentation .me{
+        font-size: 40px;
+    }
+    #aboutMeImg{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    #aboutMe h3{
+        font-size: 50px;
+    }
+    #skills-container p{
+        font-size: 30px;
+    }
+    #skills-container p:hover{
+        font-size: 35px;
+        transition: all ease 1.2s;
+    }
+    #projects h2{
+        font-size: 50px;
+    }
+    #projects-container{
+        grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 30px;
+        margin: 0 40px;
+    }
+}

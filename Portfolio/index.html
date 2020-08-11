@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <a href="#" class="brand">Sebastian Lobos</a>
+        <ul>
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#hireMe">Hire Me</a></li>
+        </ul>
+    </nav>
+    <section id="welcome-section">
+        <div class="text-container">
+            <h1>Welcome!</h1>
+            <p> I'm Sebastian</p>
+            <p>I'm a Full-Stack Js Developer</p>
+        </div>
+        <div class="img-container">
+            <img id="welcomeImg" src="https://i.pinimg.com/originals/d6/9b/3e/d69b3e26025f501613c96b44efcf43e0.jpg" alt="Actually is Vader not me">
+        </div>    
+    </section>
+    <section id="aboutMe">
+        <h2>About Me</h2>
+        <div id="presentation">
+            <p class="me">I'm Sebastian Lobos a passionate M.E.R.N Full-Stack junior developer 
+                and homebrewer as well. So, if you have a web project or you want 
+                take some good beer, you should contact me.</p>
+            <div id="aboutMeImg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTTx-o6Q6WRTA3TpMzfs1LMzbi6jusplM9hqg&usqp=CAU" alt="">
+                <img src="data:image/jpeg;base64,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" alt="">
+            </div>
+        </div>
+        <h3>My Skills</h3>    
+        <div id="skills-container">
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <p>JAVASCRIPT</p>
+            <p>JQUERY</p>
+            <p>NODEJs</p>
+            <p>EXPRESSJs</p>
+            <p>MONGODB</p>
+            <p>MONGOOSE</p>
+            <p>EJS</p>
+        </div>    
+    </section>
+    <section id="projects">
+        <h2>Take a look at my projects</h2>
+        <div id="projects-container">
+            <a href="https://github.com/SebasLobos/Blog-Project" class="project-tile">
+                <img src="https://ayudahosting.online/wp-content/uploads/2019/12/diferencia-blog-sitio-web-ayuda-hosting-3.jpg" alt="Blog">
+                <p>Blog Project</p>
+            </a>
+            <a href="https://github.com/SebasLobos/ToDoList" class="project-tile">
+                <img src="https://149366099.v2.pressablecdn.com/wp-content/uploads/2015/05/to-do-list.jpg" alt="To Do List">
+                <p>To Do List Project</p>
+            </a>
+            <a href="https://github.com/SebasLobos/Sign-Up-Project" class="project-tile">
+                <img src="https://www.tutorialrepublic.com/snippets/designs/elegant-sign-up-form-with-icons.png" alt="Sign Up Form">
+                <p>Sign Up Project</p>
+            </a>
+            <a href="https://github.com/SebasLobos/Simon-Game" class="project-tile">
+                <img src="https://b-bly.github.io/img/portfolio/simon.jpeg" alt="Simon Game">
+                <p>Simon Game Project</p>
+            </a>
+        </div>
+    </section>
+    <footer id="hireMe">
+        <p>Make your ideas reality</p>
+        <p>CONTACT ME!</p>
+        <div id="social-icons">
+            <a href="https://es-la.facebook.com/sebastian.lobos.96" target="_blank" id="profile-link"><i class="fab fa-facebook-square fa-5x"></i></a>
+            <a href="https://www.instagram.com/lobos.sebas/" target="_blank" id="profile-link"><i class="fab fa-instagram-square fa-5x"></i></a>
+            <a href="https://github.com/SebasLobos?tab=repositories" target="_blank" id="profile-link"><i class="fab fa-github-square fa-5x"></i></a>
+            <a href="estenolopongo@gmail.com" target="_blank" id="profile-link"><i class="fas fa-envelope-square fa-5x"></i></a>
+        </div>
+        <p class="copyright">Copyright by me except Darth Vader, he is from Disney.</P>
+    </footer>
+    <script src="https://kit.fontawesome.com/0892f38910.js" crossorigin="anonymous"></script>    
+</body>
+</html>
